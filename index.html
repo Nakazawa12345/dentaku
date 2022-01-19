@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div> Hollow 電卓!</div>
+<input/>
+<br>
+<button onclick
+="document.querySelector('input').value+='7'">7</button>
+<button onclick
+="document.querySelector('input').value=+'8'">8</button>
+<button onclick
+="document.querySelector('input').value+='9'">9</button>
+<button onclick
+="document.querySelector('input').value+='+'">+</button>
+<br>
+
+<button onclick
+="document.querySelector('input').value+='4'">4</button>
+<button onclick
+="document.querySelector('input').value+='5'">5</button>
+<button onclick
+="document.querySelector('input').value+='6'">6</button>
+<button onclick
+="document.querySelector('input').value+='-'">-</button>
+<br>
+
+<button onclick
+="document.querySelector('input').value+='1'">1</button>
+<button onclick
+="document.querySelector('input').value+='2'">2</button>
+<button onclick
+="document.querySelector('input').value+='3'">3</button>
+<button onclick
+="document.querySelector('input').value+='*'">*</button>
+<br>
+
+<button onclick
+="document.querySelector('input').value+='0'">0</button>
+<button onclick
+="document.querySelector('input').value+='.'">.</button>
+<button onclick
+="document.querySelector('input').value=' '">C</button>
+<button onclick
+="document.querySelector('input').value=+'/'">/</button>
+<br>
+
+<button onclick
+="cal()">=</button>
+</body>
+
+<script>
+	function cal()
+{
+	document.querySelector('input').value=
+eval(document.querySelector('input').value)
+}
+</script>
+
+</html>
