@@ -5,8 +5,9 @@
 div{color:red;
   font-size:40px;
   position:relative;
-  top:50px;
+  top:30px;
   left:120px;}
+  body{background-color:#C5F3EB;}
 </style>
 <body>
 <div> ****電卓****</div>
@@ -14,10 +15,10 @@ div{color:red;
 
 <style>
 input{color:black;
-  font-size:25px;
+  font-size:40px;
   position:relative;
-  top:50px;
-  left:100px;}
+  top:30px;
+  left:20px;}
 </style>
 <input/>
 <br>
@@ -26,7 +27,7 @@ input{color:black;
 button{color:blue;
   font-size:40px;
   position:relative;
-  top:80px;
+  top:60px;
   left:130px;}
 </style>
 <button onclick
@@ -36,7 +37,7 @@ button{color:blue;
 <button onclick
 ="document.querySelector('input').value+='9'">９</button>
 <button onclick
-="document.querySelector('input').value+='+'">＋</button>
+="document.querySelector('input').value+='+'"  style="background-color:lightgray;">＋</button>
 <br>
 
 <button onclick
@@ -46,7 +47,7 @@ button{color:blue;
 <button onclick
 ="document.querySelector('input').value+='6'">６</button>
 <button onclick
-="document.querySelector('input').value+='-'">－</button>
+="document.querySelector('input').value+='-'"  style="background-color:lightgray;">－</button>
 <br>
 
 <button onclick
@@ -56,7 +57,7 @@ button{color:blue;
 <button onclick
 ="document.querySelector('input').value+='3'">３</button>
 <button onclick
-="document.querySelector('input').value+='*'">＊</button>
+="document.querySelector('input').value+='*'"  style="background-color:lightgray;">＊</button>
 <br>
 
 <button onclick
@@ -65,13 +66,13 @@ button{color:blue;
 ="document.querySelector('input').value+='.'">．</button>
 
 <button onclick
-="document.querySelector('input').value=+'/'">／</button>
+="document.querySelector('input').value=+'/'"  style="background-color:lightgray;">／</button>
 <br>
 
 <button onclick
-="cal()" style="width:118px;">＝</button>
+="cal()" style="width:118px;background-color:lightgray;">＝</button>
 <button onclick
-="document.querySelector('input').value=' '" style="width:118px;">Ｃ</button>
+="document.querySelector('input').value=' '" style="color:red;width:118px;background-color:lightblue;">Ｃ</button>
 </body>
 
 <script>
